@@ -1,11 +1,11 @@
 {
-    "name": "swissup/theme-editor-swissup-absolute",
+    "name": "swissup/module-theme-editor-swissup-absolute",
     "description": "Theme styles for Swissup Absolute theme",
     "type": "magento2-module",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "license": "OSL-3.0",
     "require": {
-        "swissup/theme-editor": "*"
+        "swissup/module-theme-editor": "^1.5.0"
     },
     "autoload": {
         "files": [ "registration.php" ],
