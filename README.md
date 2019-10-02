@@ -1,6 +1,14 @@
-# Swissup Absolute theme styles
+# Swissup Absolute Theme Editor
 
-### Installation
+## Installation
+
+### For clients
+
+Please do not install this module. It will be installed automatically as a dependency.
+
+### For developers
+
+Use this approach if you have access to our private repositories!
 
 ```bash
 cd <magento_root>
