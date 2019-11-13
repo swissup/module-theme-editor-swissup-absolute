@@ -279,6 +279,7 @@
                     <frontend_model>Swissup\ThemeEditor\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
                 </field>
             </group>
+            <include path="Swissup_ThemeEditor::system/head.xml"/>
         </section>
     </system>
 </config>
