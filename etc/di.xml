@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Swissup\ThemeEditorSwissupAbsolute\Block\Adminhtml\System\Config\Form\Field\CategoryPagePreview" type="Swissup\ThemeEditor\Block\Adminhtml\System\Config\Form\Field\PagePreview">
+        <arguments>
+            <argument name="previewData" xsi:type="array">
+                <item name="template" xsi:type="string">Swissup_ThemeEditor::config/category-page-preview.phtml</item>
+                <item name="content_width" xsi:type="number">1280</item>
+                <item name="header_width" xsi:type="number">1280</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Swissup\ThemeEditorSwissupAbsolute\Model\Config\Backend\CategoryPageLayout" type="Swissup\ThemeEditor\Model\Config\Backend\PageLayout">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="themeCode" xsi:type="string">Swissup/absolute</item>
+                <item name="handle" xsi:type="string">catalog_category_view</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <type name="Swissup\ThemeEditorSwissupAbsolute\Model\Config\Backend\CategoryColumnsCount">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="themeCode" xsi:type="string">Swissup/absolute</item>
+                <item name="handle" xsi:type="string">catalog_category_view</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

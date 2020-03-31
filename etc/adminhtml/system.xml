@@ -279,6 +279,59 @@
                     <frontend_model>Swissup\ThemeEditor\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
                 </field>
             </group>
+            <group id="category" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Category Page</label>
+                <field id="categoryPagePreview" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Preview page layout</label>
+                    <frontend_model>Swissup\ThemeEditorSwissupAbsolute\Block\Adminhtml\System\Config\Form\Field\CategoryPagePreview</frontend_model>
+                </field>
+                <field id="page_layout" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Layout</label>
+                    <source_model>Swissup\ThemeEditor\Model\Config\Source\Layout</source_model>
+                    <backend_model>Swissup\ThemeEditorSwissupAbsolute\Model\Config\Backend\CategoryPageLayout</backend_model>
+                </field>
+                <field id="list_mode" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Products list mode</label>
+                    <source_model>Magento\Catalog\Model\Config\Source\ListMode</source_model>
+                    <config_path>catalog/frontend/list_mode</config_path>
+                </field>
+                <group id="grid" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Grid Mode</label>
+                    <field id="per_page_values" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                        <label>Products per Page Allowed Values</label>
+                        <comment>Comma-separated.</comment>
+                        <validate>validate-per-page-value-list required-entry</validate>
+                        <config_path>catalog/frontend/grid_per_page_values</config_path>
+                    </field>
+                    <field id="per_page" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                        <label>Products per Page Default Value</label>
+                        <comment>Must be in the allowed values list</comment>
+                        <validate>validate-per-page-value</validate>
+                        <config_path>catalog/frontend/grid_per_page</config_path>
+                    </field>
+                    <field id="columns_count" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                        <label>Columns per Row</label>
+                        <comment><![CDATA[<b>Min width</b> - min width of a screen where columns number must be applied.<br /><b>Columns</b> - columns count itself.<br /><b>Spacing</b> - spacing between cells in grid. Play with this value for each width to adjust products in a row.]]></comment>
+                        <frontend_model>Swissup\ThemeEditorSwissupAbsolute\Block\Adminhtml\System\Config\Form\Field\ColumnsCount</frontend_model>
+                        <backend_model>Swissup\ThemeEditorSwissupAbsolute\Model\Config\Backend\CategoryColumnsCount</backend_model>
+                    </field>
+                </group>
+                <group id="list" translate="label" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>List Mode</label>
+                    <field id="per_page_values" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                        <label>Products per Page Allowed Values</label>
+                        <comment>Comma-separated.</comment>
+                        <validate>validate-per-page-value-list required-entry</validate>
+                        <config_path>catalog/frontend/list_per_page_values</config_path>
+                    </field>
+                    <field id="per_page" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                        <label>Products per Page Default Value</label>
+                        <comment>Must be in the allowed values list</comment>
+                        <validate>validate-per-page-value</validate>
+                        <config_path>catalog/frontend/list_per_page</config_path>
+                    </field>
+                </group>
+            </group>
             <include path="Swissup_ThemeEditor::system/head.xml"/>
         </section>
     </system>

@@ -56,6 +56,11 @@
                 <footerInformationalHeadings_color>#d5e1e9</footerInformationalHeadings_color>
                 <footerInformationalLinks_color>#d5e1e9</footerInformationalLinks_color>
             </fonts>
+            <category>
+                <grid>
+                    <columns_count>{"640":{"columns":"3","spacing":"4"},"1024":{"columns":"4","spacing":"6"}}</columns_count>
+                </grid>
+            </category>
             <css_selector>
                 <body>body</body>
                 <footer>.page-footer</footer>
