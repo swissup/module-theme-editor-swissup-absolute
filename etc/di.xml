@@ -7,6 +7,7 @@
                 <item name="template" xsi:type="string">Swissup_ThemeEditor::config/category-page-preview.phtml</item>
                 <item name="content_width" xsi:type="number">1280</item>
                 <item name="header_width" xsi:type="number">1280</item>
+                <item name="description_position" xsi:type="string">main.content.before</item>
             </argument>
         </arguments>
     </virtualType>
@@ -26,4 +27,12 @@
             </argument>
         </arguments>
     </type>
+    <virtualType name="Swissup\ThemeEditorSwissupAbsolute\Model\Config\Backend\Category\MoveDescription" type="Swissup\ThemeEditor\Model\Config\Backend\Category\MoveDescription">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="themeCode" xsi:type="string">Swissup/absolute</item>
+                <item name="handle" xsi:type="string">catalog_category_view</item>
+            </argument>
+        </arguments>
+    </virtualType>
 </config>

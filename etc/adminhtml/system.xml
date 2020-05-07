@@ -290,6 +290,11 @@
                     <source_model>Swissup\ThemeEditor\Model\Config\Source\Layout</source_model>
                     <backend_model>Swissup\ThemeEditorSwissupAbsolute\Model\Config\Backend\CategoryPageLayout</backend_model>
                 </field>
+                <field id="description_position" translate="label" type="select" sortOrder="32" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Description position</label>
+                    <source_model>Swissup\ThemeEditor\Model\Config\Source\Category\DescriptionDestination</source_model>
+                    <backend_model>Swissup\ThemeEditorSwissupAbsolute\Model\Config\Backend\Category\MoveDescription</backend_model>
+                </field>
                 <field id="list_mode" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Products list mode</label>
                     <source_model>Magento\Catalog\Model\Config\Source\ListMode</source_model>
