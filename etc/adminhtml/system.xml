@@ -295,6 +295,14 @@
                     <source_model>Swissup\ThemeEditor\Model\Config\Source\Category\DescriptionDestination</source_model>
                     <backend_model>Swissup\ThemeEditorSwissupAbsolute\Model\Config\Backend\Category\MoveDescription</backend_model>
                 </field>
+                <field id="layered_navigation_position" translate="label" type="select" sortOrder="34" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Layered Navigation position</label>
+                    <source_model>Swissup\ThemeEditor\Model\Config\Source\Category\LayeredNavigationDestination</source_model>
+                    <depends>
+                        <!-- Hide layered navigation position option. Because it doesn't work in this theme -->
+                        <field id="page_layout">none_existing_value</field>
+                    </depends>
+                </field>
                 <field id="list_mode" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Products list mode</label>
                     <source_model>Magento\Catalog\Model\Config\Source\ListMode</source_model>

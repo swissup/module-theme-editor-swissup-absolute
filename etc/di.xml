@@ -8,6 +8,7 @@
                 <item name="content_width" xsi:type="number">1280</item>
                 <item name="header_width" xsi:type="number">1280</item>
                 <item name="description_position" xsi:type="string">main.content.before</item>
+                <item name="layered_navigation_position" xsi:type="string">sidebar</item>
             </argument>
         </arguments>
     </virtualType>
