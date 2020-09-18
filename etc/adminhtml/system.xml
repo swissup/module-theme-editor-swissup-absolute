@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <section id="swissup_absolute" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>Absolute Theme</label>
+            <label>Absolute</label>
             <tab>theme_editor</tab>
             <resource>Swissup_ThemeEditorSwissupAbsolute::config</resource>
 
@@ -338,6 +338,7 @@
                 </group>
             </group>
             <include path="Swissup_ThemeEditor::system/head.xml"/>
+            <include path="Swissup_ThemeEditor::system/themes.xml"/>
         </section>
     </system>
 </config>
